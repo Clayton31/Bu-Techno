@@ -1,0 +1,17 @@
+{
+  "name": "bu-techno",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "npm@10.8.2",
+  "workspaces": ["apps/web"],
+  "scripts": {
+    "dev": "npm run dev -w @bu-techno/web",
+    "build": "npm run build -w @bu-techno/web",
+    "lint": "npm run lint -w @bu-techno/web",
+    "format": "prettier --write .",
+    "db:generate": "npm run db:generate -w @bu-techno/web",
+    "db:migrate": "npm run db:migrate -w @bu-techno/web",
+    "db:studio": "npm run db:studio -w @bu-techno/web"
+  },
+  "devDependencies": {"prettier": "^3.4.2"}
+}
